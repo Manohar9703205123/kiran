@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skin Disease AI Assistant</title>
+  <link rel="stylesheet" href="styles1.css" />
+</head>
+<body>
+  <header>
+    <h1>Skin Disease Identification AI</h1>
+  </header>
+
+  <main>
+    <section class="upload-section">
+      <h2>Upload Skin Photo</h2>
+      <input type="file" id="photoUpload" accept="image/*" />
+      <button id="analyzeBtn">Analyze</button>
+      <p id="analysisResult"></p>
+    </section>
+
+    <section class="chatbot-section">
+      <div id="chatbot">
+        <div id="chatbot-header" tabindex="0" aria-expanded="true">AI Assistant (Click to toggle)</div>
+        <div id="chatbot-body">
+          <div id="chatbot-messages"></div>
+          <input
+            id="chatbot-input"
+            type="text"
+            placeholder="Ask me anything about skin diseases..."
+            aria-label="Chatbot input"
+          />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
